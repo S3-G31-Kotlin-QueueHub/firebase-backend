@@ -12,7 +12,8 @@ initializeApp();
 // Importar funciones desde el archivo separado
 const { getCollectionData } = require("./src/users/getUsers");
 const { onNewTurn } = require("./src/triggers/onNewTurn")
-
+const { manageQueue } = require("./src/queues/manageQueue")
 // Exportar las funciones
 exports.getCollectionData = getCollectionData;
 exports.onNewTurn = onNewTurn;
+exports.manageQueue = manageQueue
