@@ -13,7 +13,10 @@ initializeApp();
 const { getCollectionData } = require("./src/users/getUsers");
 const { onNewTurn } = require("./src/triggers/onNewTurn")
 const { manageQueue } = require("./src/queues/manageQueue")
+const { updateLestTimeLastHour } = require("./src/places/updateLestTimeLastHour")
+
 // Exportar las funciones
 exports.getCollectionData = getCollectionData;
 exports.onNewTurn = onNewTurn;
-exports.manageQueue = manageQueue
+exports.manageQueue = manageQueue;
+exports.updateLestTimeLastHour = updateLestTimeLastHour;
