@@ -14,9 +14,12 @@ const { getCollectionData } = require("./src/users/getUsers");
 const { onNewTurn } = require("./src/triggers/onNewTurn")
 const { manageQueue } = require("./src/queues/manageQueue")
 const { updateLestTimeLastHour } = require("./src/places/updateLestTimeLastHour")
-
+const { onNewReview } = require("./src/triggers/onNewReview")
+const { addReview } = require("./src/addReview/addReview")
 // Exportar las funciones
 exports.getCollectionData = getCollectionData;
 exports.onNewTurn = onNewTurn;
 exports.manageQueue = manageQueue;
 exports.updateLestTimeLastHour = updateLestTimeLastHour;
+exports.onNewReview = onNewReview;
+exports.addReview = addReview;

@@ -50,13 +50,10 @@ const updateCommonPlaces = async (event)=>{
             const placeDoc = await db.collection('places').doc(idPlace).get();
 
             if(placeDoc.exists){
-                const place = placeDoc.data()
                 commonPlaces.push({
-                    idUser: idUser,
                     idPlace,
                     visitCount: data.count,
-                    lastVisit: data.lastVisit,
-                    ...place
+                    lastVisit: data.lastVisit
                 })
             }
         }
