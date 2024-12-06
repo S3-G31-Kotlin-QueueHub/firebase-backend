@@ -16,6 +16,8 @@ const { manageQueue } = require("./src/queues/manageQueue")
 const { updateLestTimeLastHour } = require("./src/places/updateLestTimeLastHour")
 const { onNewReview } = require("./src/triggers/onNewReview")
 const { addReview } = require("./src/addReview/addReview")
+const { countWayToJoin } = require("./src/places/countWayToJoin")
+const { getData } = require("./src/places/getData")
 // Exportar las funciones
 exports.getCollectionData = getCollectionData;
 exports.onNewTurn = onNewTurn;
@@ -23,3 +25,5 @@ exports.manageQueue = manageQueue;
 exports.updateLestTimeLastHour = updateLestTimeLastHour;
 exports.onNewReview = onNewReview;
 exports.addReview = addReview;
+exports.countWayToJoin = countWayToJoin;
+exports.getData = getData;
